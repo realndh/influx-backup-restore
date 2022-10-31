@@ -1,0 +1,56 @@
+{
+	"PlatformSettingsConfig": {
+		"AdministratorUserSettings": {
+			"InitialPassword": "Springboot1213"
+		},
+		"BasicSettings": {
+            "BackupStorage": "/ThingworxBackupStorage",
+            "DatabaseLogRetentionPolicy": 7,
+            "DatabaseWriteRetryAttempts": 10,
+            "EnableBackup": true,
+            "EnableClusteredMode": false,
+            "EnableSystemLogging": false,
+            "EnableSSO": false,
+            "FileRepositoryRoot": "/ThingworxStorage",
+            "HTTPRequestHeaderMaxLength": 2000,
+            "HTTPRequestParameterMaxLength": 2000,
+            "InternalAesCryptographicKeyLength": 128,
+            "MetricsLoggingFrequency": 30,
+            "MetricsLoggingLevel": "WARN",
+            "SessionUpdateDelay": 60,
+            "Storage": "/ThingworxStorage",
+            "ScriptTimeout": 500
+		},
+		"ContentTypeSettings": {
+			"supportedMediaEntityContentTypes": [
+				"image/svg+xml",
+				"image/png",
+				"image/gif",
+				"image/bmp",
+				"image/jpeg",
+				"application/pdf",
+				"image/vnd.microsoft.icon"
+			]
+		},
+		"ExtensionPackageImportPolicy": {
+            "importEnabled": true,
+			"allowJarResources": true,
+			"allowJavascriptResources": true,
+			"allowCSSResources": true,
+			"allowJSONResources": true,
+			"allowWebAppResources": true,
+			"allowEntities": true,
+			"allowExtensibleEntities": true,
+			"haCompatibilityImportLevel": "WARN"
+        }
+	},
+	"PersistenceProviderPackageConfigs": {
+		"PostgresPersistenceProviderPackage": {
+			"ConnectionInformation": {
+				"jdbcUrl": "jdbc:postgresql://localhost:5432/thingworx",
+				"password": "twadmin",
+				"username": "twadmin"
+			}
+		}
+	}
+}
